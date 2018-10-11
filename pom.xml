@@ -23,6 +23,7 @@
         <spring.version>4.2.3.RELEASE</spring.version>
         <aspectjweaver.version>1.7.3</aspectjweaver.version>
         <druid.version>1.0.15</druid.version>
+        <mysql-connector.version>6.0.6</mysql-connector.version>
     </properties>
 
     <dependencies>
@@ -32,11 +33,23 @@
             <version>4.11</version>
             <scope>test</scope>
         </dependency>
+        <!--jdbc connector-->
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>${mysql-connector.version}</version>
+        </dependency>
         <!-- druid -->
         <dependency>
             <groupId>com.alibaba</groupId>
             <artifactId>druid</artifactId>
             <version>${druid.version}</version>
+        </dependency>
+        <!--mybatis-->
+        <dependency>
+            <groupId>org.mybatis</groupId>
+            <artifactId>mybatis</artifactId>
+            <version>3.3.0</version>
         </dependency>
         <dependency>
             <groupId>org.mybatis</groupId>

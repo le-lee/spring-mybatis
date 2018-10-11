@@ -1,16 +1,16 @@
 package com.neo.pojo;
 
 public class User {
-    private String id;
+    private String userId;
     private String name;
     private String age;
 
-    public String getId() {
-        return id;
+    public String getUserId() {
+        return userId;
     }
 
-    public void setId(String id) {
-        this.id = id;
+    public void setUserId(String userId) {
+        this.userId = userId;
     }
 
     public String getName() {
@@ -31,6 +31,6 @@ public class User {
 
     @Override
     public String toString(){
-        return "id: "+this.id + " name: " + this.name + " age:"+this.age;
+        return "userId: "+this.userId + " name: " + this.name + " age:"+this.age;
     }
 }
